@@ -10,7 +10,7 @@ class InfoboxContainer extends React.Component {
     render() {
         return (
             <div class="card mb-3 bshadow">
-                <img class="card-img-top" src={this.plan.name+".jpg"} alt="Card image cap" />
+                <img class="card-img-top" src={`../${this.plan.name}.jpg`} alt="Card image cap" />
                 <div class="card-body">
                     <h4 class="card-title">{this.plan.name} Insurance</h4>
                     <p class="card-text">{this.plan.description}</p>

@@ -12,7 +12,7 @@ class HomeContainer extends React.Component {
     }
 
     componentDidMount() {
-        fetch("http://172.31.17.184:5000/plans/all")
+        fetch("http://3.16.42.165/plans/all")
             .then(results => results.json())
             .then(plans => {
                 this.setState({

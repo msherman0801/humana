@@ -14,7 +14,7 @@ class MyPlans extends React.Component {
     }
 
     componentDidMount() {
-        fetch("http://172.31.17.184:5000/users/5e69b32167dbfb1157c1becf/myplans")
+        fetch("http://3.16.42.165/users/5e69b32167dbfb1157c1becf/myplans")
             .then(res => res.json())
             .then(plans => {
                 this.setState({
@@ -48,7 +48,7 @@ class MyPlans extends React.Component {
 
     addPlan = (type) => {
         console.log('HIT')
-        fetch('http://172.31.17.184:5000/users/5e69b32167dbfb1157c1becf/addplan', {
+        fetch('http://3.16.42.165/users/5e69b32167dbfb1157c1becf/addplan', {
             method: 'post',
             headers: {
                 'Content-Type': 'application/json',
@@ -66,7 +66,7 @@ class MyPlans extends React.Component {
     }
 
     removePlans() {
-        fetch("http://172.31.17.184:5000/users/5e69b32167dbfb1157c1becf/myplans", { 
+        fetch("http://3.16.42.165/users/5e69b32167dbfb1157c1becf/myplans", { 
             method: 'delete', 
             headers: {
             'Content-Type': 'application/json',
